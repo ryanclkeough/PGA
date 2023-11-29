@@ -7,47 +7,40 @@
         mc:Ignorable="d"
         Title="PGA Document Creator"
         Height="450"
-        Width="800">
+        Width="500"
+        WindowStartupLocation="CenterScreen">
 
-    <Grid>
+  <Grid>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" Grid.Column="0">
-            <Border BorderBrush="Black" BorderThickness="1">
-                <TextBlock Text="Row 0, Column 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Border>
-        </Grid>
-
-        <Grid Grid.Row="0" Grid.Column="1">
-            <Border BorderBrush="Black" BorderThickness="1">
-                <TextBlock Text="Row 0, Column 1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Border>
-        </Grid>
-
-        <Grid Grid.Row="1" Grid.Column="0">
-            <Border BorderBrush="Black" BorderThickness="1">
-                <TextBlock Text="Row 1, Column 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Border>
-        </Grid>
-
-        <Grid Grid.Row="1" Grid.Column="1">
-            <Border BorderBrush="Black" BorderThickness="1">
-                <TextBlock Text="Row 1, Column 1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </Border>
-        </Grid>
-
+    <Grid Grid.Row="0" Grid.Column="0">
+      <TextBlock Text="Date" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
+
+    <Grid Grid.Row="0" Grid.Column="1">
+      <TextBox Text="Enter Date Here" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+
+    <Grid Grid.Row="1" Grid.Column="0">
+      <TextBlock Text="Row 1, Column 0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+
+    <Grid Grid.Row="1" Grid.Column="1">
+      <TextBlock Text="Row 1, Column 1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+
+  </Grid>
 </Window>
