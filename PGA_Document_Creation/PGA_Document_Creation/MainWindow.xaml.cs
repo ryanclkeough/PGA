@@ -52,10 +52,14 @@ namespace PGA_Document_Creation
             }
           }
         }
+        //string[] properties = new string[] { "date", "Customer_Name", "Customer_Address" };
+        //string[] textBoxes = new string[] { "date", "Customer_Name", "Customer_Address" };
 
         string jsonContent = File.ReadAllText(jsonPath);
         JsonDocument jsonDocument = JsonDocument.Parse(jsonContent);
         JsonElement root = jsonDocument.RootElement;
+
+
         if (root.TryGetProperty("date", out JsonElement displayTextElement))
         {
           string displayText = displayTextElement.GetString() ?? "ERROR: JSON DID NOT CONTAIN DATA";
@@ -65,10 +69,6 @@ namespace PGA_Document_Creation
         {
           MessageBox.Show("Key 'displayText' not found in the JSON file.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
         }
-
-        //Date_TextBox.Text = jsonContent;
-
-        //MessageBox.Show($"Hi");
       }
       catch (Exception ex)
       {
